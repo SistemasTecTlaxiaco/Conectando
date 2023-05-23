@@ -1,0 +1,24 @@
+{
+  "name": "conectando",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "index.js",
+  "scripts": {
+    "test": "asp",
+    "build": "asb",
+    "mock": "node my-mock-script.js",
+    "deploy:dev": "yarn build && near dev-deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assemblyscript": "^0.19.22",
+    "jest": "^29.5.0",
+    "near-sdk-as": "^3.2.3"
+  },
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.22",
+    "date-and-time": "^2.0.1"
+  }
+}
