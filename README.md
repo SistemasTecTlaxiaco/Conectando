@@ -1,4 +1,4 @@
-# Bienvenido a OpenBooks 📖
+# Bienvenido a Conectando 📖
 ---
 OpenBooks es un smart contract que parte de la idea de que todo el conocimiento y la información debe ser libre para todos. Este proyecto permite a los usuarios publicar documentos, libros, etc. en un ambiente completamente descentralizado y así permitir a otros usuarios obtener los recursos facilmente sin tener que visitar cientos de páginas diferentes hasta conseguir el recurso que buscaban.
 Las funcionalidades principales del contrato son las siguientes:
