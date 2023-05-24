@@ -1,15 +1,15 @@
 # Bienvenido a Conectando 📖
 ---
-OpenBooks es un smart contract que parte de la idea de que todo el conocimiento y la información debe ser libre para todos. Este proyecto permite a los usuarios publicar documentos, libros, etc. en un ambiente completamente descentralizado y así permitir a otros usuarios obtener los recursos facilmente sin tener que visitar cientos de páginas diferentes hasta conseguir el recurso que buscaban.
+Este proyecto permite a los usuarios publicar Servicios. en un ambiente completamente descentralizado.
 Las funcionalidades principales del contrato son las siguientes:
-* Subir un libro (además, guarda el usuario de la persona que lo sube como "Contribuyente").
-* Obtener todos los libros
-* Obtener un libro en específico.
-* Obtener lista de contribuyentes.
-* Eliminar la lista de libros.
-* Eliminar un libro en específico.
-* Vaciar la lista de contribuyentes.
-* Buscar un contribuyente por su usuario en la dapp
+* Publicar  un Servicio 
+* Obtener todos los Servicios
+* Obtener un servicio en específico.
+* Obtener lista de Recomendaciones.
+* Eliminar la lista de servicios.
+* Eliminar un servicio en específico.
+* Vaciar la lista de recomendaciones.
+
 
 ## Cómo utilizar este contrato ❔
 ---
@@ -33,38 +33,30 @@ Ya tenemos todo lo que necesitamos para probar nuestro contrato inteligente. Aho
 ## Llamadas al Contrato 
 ---
 Algunos de los metodos que podemos ejecutar son los siguientes
-- Cargar un libro 
+- Cargar un Servicio 
   ```bash
-  near call dev-<tu numero de contrato> uploadBook '{"name": "Name of the Book", "description": "Description of the Book", "image": "This is the image of the Book", "file": "File of the Book", "author": "Author of the Book", "language": "english", "publisher": "publisher of the book"}' --accountId <tu_user.testnet>
+  near call dev-<tu numero de contrato> uploadService '{"servicio": "Nombre del servicio", "descripcion": "Descripcion del servicio", "imagen": "Una imagen del servicio", "direccion": "Direccion", "costo": "Costo"}' --accountId <tu_user.testnet>
   ```
-- Buscar todos los libros 
+- Buscar todos los servicios 
   ```bash
-  near call dev-<tu numero de contrato> getBooks --accountId <tu_user.testnet>
+  near call dev-<tu numero de contrato> getServices  --accountId <tu_user.testnet>
   ```
-- Buscar un libro en especifico
+- Buscar un servicio en especifico
 ```bash
-near call dev-<tu numero de contrato> getBook '{"bookIndex": i32}' --accountId <tu_user.testnet>
+near call dev-<tu numero de contrato> getServicio  '{"servicioIndex": i32}' --accountId <tu_user.testnet>
   ```
-- Eliminar un libro
+- Eliminar un servicio
 ```bash
-near call dev-<tu numero de contrato> deleteBook '{"bookIndex": i32}' --accountId <tu_user.testnet>
+near call dev-<tu numero de contrato> deleteServicio  '{"servicioIndex": i32}' --accountId <tu_user.testnet>
   ```
-- Donar al proyecto
+- Hcaer un pago 
 ```bash
 near call dev<tu numero de contrato> donateToProject --accountId <tu_user.testnet> --amount i32
   ```
 - Buscar los contribuyentes 
   ```bash
-  near call dev-<tu numero de contrato> getContributors --accountId <tu_user.testnet>
+  near call dev-<tu numero de contrato> getRecomendations  --accountId <tu_user.testnet>
     ```
-- Buscar un contribuyente por nombre de usuario 
-  ```bash
-  near call dev-<tu numero de contrato> findContributor '{"contributorUser": "usuario.testnet"}' --accountId <tu_user.testnet>
-    ```
-
-## Mockup de Figma 🎨📖
-Abre este [enlace](https://www.figma.com/file/3NKKf6JKrRXON8Q7yoFX1N/OpenBooks?node-id=0%3A1) para abrir la propuesta de diseño de la Dapp.
 
 ## Authors
-- [Sebastian Vivas](https://github.com/sebasvivas1)
-- [Jose Alfredo Roman Cruz](https://github.com/josealfredo79)
+
