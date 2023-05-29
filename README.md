@@ -59,4 +59,6 @@ near call dev<tu numero de contrato> donateToProject --accountId <tu_user.testne
     ```
 
 ## Authors
-
+- [Irving Fernando Reyes Pacheco](https://github.com/IrvingFernand0)
+- [Diego Alexis Carlos Cruz](https://github.com/Diego047)
+- [Edwin Ortiz Cruz](https://github.com/EdwinOrtiz1412)
