@@ -24,7 +24,7 @@ Ya tenemos todo lo que necesitamos para probar nuestro contrato inteligente. Aho
 
 ## Instalación 📖🐱‍💻
 ---
-1. Clone el repositorio ```git clone git@github.com:sebasvivas1/OpenBooks.git && cd OpenBooks```
+1. Clone el repositorio ```gh repo clone SistemasTecTlaxiaco/Conectando```
 2. Vamos a iniciar sesión en nuestra wallet que creamos anteriormente: ```near login```
 3. Dentro del repositorio, instalemos las dependencias del proyecto ejecutando ```npm install```, tranquilo, esto puede tomar unos segundos.
 4. Si quieres desplegar el contrato y probar sus funciones, puedes hacerlo con ```yarn deploy:dev``` esto le devolverá un conjunto de caracteres que empezarán por "dev-" seguido por numeros generados por la red. Guárdelo, lo necesitará si quiere probar los métodos del contrato inteligente.
